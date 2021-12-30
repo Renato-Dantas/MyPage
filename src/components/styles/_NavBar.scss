@@ -1,0 +1,103 @@
+nav{
+    height: 80px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+
+    .nav-links{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        a{
+            color: $white;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            
+            &:hover{
+                color: $gold;
+                font-style: italic;
+                border-bottom: 3px solid $gold;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .nav-links{
+            flex-direction: column;
+            position: absolute;
+            top: 7px;
+            right: 0px;
+            width: 50%;
+            height: 98vh;
+            padding: 100px 0;
+            border-radius: 5px;
+            background-color: $black;
+            align-items: center;
+            transform: translateX(100%);
+            transition: all .5s ease-in-out;
+            opacity: 0;
+
+            li{
+                opacity: 0;
+            }
+        }
+
+        .side-active{
+            box-shadow: 0 0 5px $gold;
+            transform: translateX(-2px);
+            opacity: 1;
+            z-index: 1000;
+        }
+
+
+        .hamburger{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+            right: 20px;
+            z-index: 1000;
+
+            .line{
+                width: 25px;
+                height: 3px;
+                background-color: $white;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+            }
+            .rotate_pos {
+                transform: rotate(-45deg) translate(-5px, 6px);
+                background-color: $gold;
+            }
+            .disapier {
+                opacity: 0;
+            }
+            .rotate_neg {
+                transform: rotate(45deg) translate(-5px, -6px);
+                background-color: $gold;
+            }
+        }
+
+        @keyframes navLinkFade {
+            from{
+                opacity: 0;
+                transform: translateX(50px) ;
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: 600px){
+        .nav-links{
+            width: 80%;
+        }
+    }
+}
