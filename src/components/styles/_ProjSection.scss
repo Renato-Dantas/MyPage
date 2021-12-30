@@ -1,0 +1,83 @@
+.project{
+    display: flex;
+    justify-content: space-between;
+    width: 932px;
+    height: 352px;
+    margin: 56px auto;
+
+    &__text,
+    &__image{
+        border-radius: 5px;
+        height: 100%;
+        background-color: $light-background;
+        margin-bottom: 56px;
+
+    }
+    
+    &__text{
+        width: 347px;
+        color: $white;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    &__image{
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $gold;
+        position: relative;
+
+        h3{
+            color: $gold;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            box-shadow: $shadow;    
+            border-radius: 5px;
+        }
+
+        button{
+            border-radius: 5px;
+            border: none;
+            box-shadow: $shadow;
+            color: $white;
+            background: linear-gradient(45deg, #333, $black);
+            margin-top: 15px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            font-family: $main-font;
+            font-weight: 600;
+
+            &:hover{
+                color: $gold;
+            }
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        &__text,
+        &__image{
+            width: 100%;
+        }
+
+        &__image{
+            min-height: 352px;
+        }
+
+    }
+    
+}

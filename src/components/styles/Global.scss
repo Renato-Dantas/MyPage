@@ -1,8 +1,13 @@
-$main-font: 'Montserrat', sans-serif;
 $white: #FFFFFF;
 $gold: #daa520;
 $background: #090909;
 $black: #000000;
+$light-background: #141414;
+$shadow: 0 0 10px $black;
+$main-font: 'Montserrat', sans-serif;
 
 @import './NavBar';
 @import './Hello';
+@import './About';
+@import './Title';
+@import './ProjSection';

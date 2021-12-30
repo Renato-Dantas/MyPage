@@ -6,7 +6,6 @@
     margin-top: 50px;
 
     h1{
-        font-family: $main-font;
         font-size: 80px;
         line-height: 98px;
         text-align: center;
@@ -24,6 +23,7 @@
 
         img{
             width: 110%;
+            filter:grayscale(4);
         }
     }
 }

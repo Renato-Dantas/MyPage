@@ -1,0 +1,20 @@
+.title-section{
+    background-color: $light-background;
+    width: 940px;
+    height: 101px;
+    margin: 85px auto 56px;
+    padding: 0 64px;
+
+    h1{
+        font-size: 80px;
+        line-height: 98px;
+    }
+
+    @media screen and (max-width: 980px) {
+        width: 90%;
+        padding: 0 30px;
+        h1{
+            font-size: 60px;
+        }
+    }
+}
