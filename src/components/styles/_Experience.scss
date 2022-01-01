@@ -1,0 +1,72 @@
+.experience{
+    width: 80%;
+    margin: 0 auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    
+
+    .year{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        width: 150px;
+        height: 150px;
+        background: $light-background;
+        color: $white;
+        font-weight: 600;
+    }
+    
+    .description{
+        background-color: $light-background;
+        border-radius: 75px;
+        width: 80%;
+        height: 150px;
+        padding: 0 50px;
+        align-items: center;
+        gap: 50px;
+        display: flex;
+        
+        h3{
+            color: $gold;
+        }
+
+        p{
+            color: $white;
+        }
+    }
+
+    @media screen and (max-width: 981px) {
+        width: 90%;
+        flex-direction: column;
+
+        .description{
+            padding: 20px 50px;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 20px;
+        .year{
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+        }
+
+        .description{
+            width: 100%;
+            min-height: 100px;
+            height: auto;
+            border-radius: 5px;
+            flex-direction: column;
+        }
+    }
+}
+

@@ -149,7 +149,8 @@ nav .nav-links a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 80%;
 }
 
 .hello h1 {
@@ -176,6 +177,15 @@ nav .nav-links a:hover {
           filter: grayscale(4);
 }
 
+@media screen and (max-width: 980px) {
+  .hello {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,7 +198,7 @@ nav .nav-links a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 136px auto 0px;
-  width: 940px;
+  width: 80%;
   min-height: 340px;
   background-color: #141414;
   padding: 60px 64px;
@@ -220,10 +230,13 @@ nav .nav-links a:hover {
 
 .title-section {
   background-color: #141414;
-  width: 940px;
+  width: 80%;
   height: 101px;
   margin: 85px auto 56px;
   padding: 0 64px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
 }
 
 .title-section h1 {
@@ -241,6 +254,12 @@ nav .nav-links a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .title-section h1 {
+    font-size: 2.3em;
+  }
+}
+
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +267,9 @@ nav .nav-links a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 932px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
   height: 352px;
   margin: 56px auto;
 }
@@ -261,7 +282,7 @@ nav .nav-links a:hover {
 }
 
 .project__text {
-  width: 347px;
+  width: 40%;
   color: #FFFFFF;
   text-align: justify;
   display: -webkit-box;
@@ -277,7 +298,7 @@ nav .nav-links a:hover {
 }
 
 .project__image {
-  width: 560px;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +350,7 @@ nav .nav-links a:hover {
   color: #daa520;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1230px) {
   .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -342,10 +363,485 @@ nav .nav-links a:hover {
     height: auto;
   }
   .project__text, .project__image {
-    width: 100%;
+    width: 90%;
   }
   .project__image {
     min-height: 352px;
   }
+}
+
+@media screen and (max-width: 981px) {
+  .project__text, .project__image {
+    width: 100%;
+  }
+}
+
+.experience {
+  width: 80%;
+  margin: 0 auto 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.experience .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+  width: 150px;
+  height: 150px;
+  background: #141414;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.experience .description {
+  background-color: #141414;
+  border-radius: 75px;
+  width: 80%;
+  height: 150px;
+  padding: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.experience .description h3 {
+  color: #daa520;
+}
+
+.experience .description p {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 981px) {
+  .experience {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .experience .description {
+    padding: 20px 50px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .experience .year {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+  }
+  .experience .description {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.courses {
+  width: 80%;
+  margin: 0 auto 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.courses .icon {
+  background: #141414;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.courses .description {
+  background-color: #141414;
+  color: #FFFFFF;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 150px;
+  padding: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.courses .description h3,
+.courses .description span {
+  color: #daa520;
+}
+
+@media screen and (max-width: 981px) {
+  .courses {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .courses .icon {
+    border-radius: 50%;
+  }
+  .courses .description {
+    padding: 20px 50px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .courses {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .courses .icon {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background: transparent;
+  }
+  .courses .description {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.knowledge {
+  width: 80%;
+  min-height: 352px;
+  margin: 0 auto 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+
+.knowledge .icon {
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.knowledge .icon img {
+  border-radius: 50%;
+}
+
+.knowledge .description {
+  background-color: #141414;
+  color: #FFFFFF;
+  border-radius: 5px;
+  display: none;
+  width: 80%;
+  min-height: 352px;
+  padding: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  opacity: 0;
+}
+
+.knowledge .description h3,
+.knowledge .description span {
+  color: #daa520;
+}
+
+.knowledge .is-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: show 2s ease-in;
+          animation: show 2s ease-in;
+}
+
+.knowledge .pulse {
+  -webkit-animation: pulse 1s ease-in;
+          animation: pulse 1s ease-in;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
+            box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 90px rgba(255, 122, 0, 0);
+            box-shadow: 0 0 0 90px rgba(255, 122, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
+            box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 90px rgba(255, 122, 0, 0);
+            box-shadow: 0 0 0 90px rgba(255, 122, 0, 0);
+  }
+}
+
+@media screen and (max-width: 981px) {
+  .knowledge {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .knowledge .icon {
+    border-radius: 50%;
+  }
+  .knowledge .description {
+    padding: 80px 50px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .knowledge {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .knowledge .icon {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background: transparent;
+    margin: 50px auto;
+  }
+  .knowledge .description {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 150px auto 200px;
+}
+
+.contact h2 {
+  margin: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 80px;
+  line-height: 98px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact h2 {
+    font-size: 40px;
+  }
+}
+
+.contact .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact .icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+.contact .icons a {
+  text-decoration: none;
+}
+
+.contact .icons a div {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 981px) {
+  .contact .icons a div {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.contact .icons a #linkedin {
+  background-image: url("../../pictures/linkedin.png");
+}
+
+.contact .icons a #github {
+  background-image: url("../../pictures/git.png");
+}
+
+.contact .icons a #outlook {
+  background-image: url("../../pictures/email.png");
+}
+
+.contact .icons a #whatsapp {
+  background-image: url("../../pictures/whats.png");
+}
+
+.contact .icons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.contact .icons div:hover label {
+  opacity: 1;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  color: #daa520;
+  margin-bottom: 200px;
+}
+
+.contact .icons label {
+  opacity: 0;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  color: #FFFFFF;
+  font-size: 25px;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  text-shadow: 0 0 5px #daa520;
 }
 /*# sourceMappingURL=Global.css.map */

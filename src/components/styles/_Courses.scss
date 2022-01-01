@@ -1,0 +1,69 @@
+.courses{
+    width: 80%;
+    margin: 0 auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+
+    .icon{
+        background: $light-background;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description{
+        background-color: $light-background;
+        color: $white;
+        border-radius: 5px;
+        display: flex;
+        width: 80%;
+        height: 150px;
+        padding: 0 50px;
+        align-items: center;
+        gap: 50px;
+
+        h3,
+        span{
+            color: $gold;
+        }
+    }
+
+    @media screen and (max-width: 981px) {
+        width: 90%;
+        flex-direction: column;
+
+        .icon{
+           border-radius: 50%;
+        }
+
+        .description{
+            padding: 20px 50px;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 20px;
+        .icon{
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            background: transparent;
+        }
+
+        .description{
+            width: 100%;
+            min-height: 100px;
+            height: auto;
+            border-radius: 5px;
+            flex-direction: column;
+        }
+    }
+}

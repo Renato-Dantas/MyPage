@@ -1,6 +1,6 @@
 const ProjSection = ({effect, projectTitle, projectImage, projectLink}) => {
     return ( 
-        <section className="project">
+        <section className="project" id='projects'>
             <div className="project__text" data-aos={effect}>
                 <p data-aos={effect}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia laborum fugiat earum in natus temporibus consectetur, magnam eum hic voluptas perferendis officia tenetur, provident sapiente necessitatibus quos. Veniam, voluptatum!</p>
             </div>

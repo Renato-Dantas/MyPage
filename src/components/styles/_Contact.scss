@@ -1,0 +1,96 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 150px auto 200px;
+
+    h2{
+        margin: 0px;
+        text-align: left;
+        color: $white;
+        font-size: 80px;
+        line-height: 98px;
+
+        @media screen and (max-width: 600px){
+            font-size: 40px;
+        }
+    }
+
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+
+        @media screen and (max-width: 600px){
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        a{
+            text-decoration: none;
+
+            div{
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                @media screen and (max-width: 981px){
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            #linkedin{
+                background-image: url('../../pictures/linkedin.png');
+            }
+
+            #github{
+                background-image: url('../../pictures/git.png');
+            }
+
+            #outlook{
+                background-image: url('../../pictures/email.png');
+            }
+
+            #whatsapp{
+                background-image: url('../../pictures/whats.png');
+            }
+
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+
+            &:hover{
+                label{
+                    opacity: 1;    
+                    text-decoration: none;
+                    text-shadow: 2px 2px 2px black;
+                    color: $gold;
+                    margin-bottom: 200px;
+                }
+            }
+
+        }
+
+        label{
+            opacity: 0;
+            transition: all .5s ease-in;
+            color: $white;
+            font-size: 25px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 80%;
+            height: 80%;
+            text-shadow: 0 0 5px $gold;
+        }
+
+    }
+}

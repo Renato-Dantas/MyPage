@@ -1,9 +1,11 @@
 .title-section{
     background-color: $light-background;
-    width: 940px;
+    width: 80%;
     height: 101px;
     margin: 85px auto 56px;
     padding: 0 64px;
+    border-radius: 5px;
+    box-shadow: $shadow;
 
     h1{
         font-size: 80px;
@@ -15,6 +17,12 @@
         padding: 0 30px;
         h1{
             font-size: 60px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        h1{
+            font-size: 2.3em;
         }
     }
 }

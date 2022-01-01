@@ -23,12 +23,12 @@ const NavBar = () => {
         <header>
             <nav>
                 <ul className="nav-links">
-                    <li><a href="/">About Me</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Experience</a></li>
-                    <li><a href="/">Courses</a></li>
-                    <li><a href="/">Knowleadge</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#knowledge">Knowleadge</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div className="hamburger" onClick={handleHamburger}>
                     <div className="line a"></div>
