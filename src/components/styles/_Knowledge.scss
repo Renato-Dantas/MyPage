@@ -17,6 +17,9 @@
 
         img{
             border-radius: 50%;
+            &:hover{
+                animation: pulse 1s ease-in;
+            }
         }
     }
 
@@ -43,10 +46,6 @@
         animation: show 2s ease-in;
     }
 
-    .pulse{
-        animation: pulse 1s ease-in;
-    }
-
     @keyframes show {
         from{
             opacity: 0;
@@ -58,7 +57,7 @@
 
     @keyframes pulse{
         from{
-            box-shadow: 0 0 0 0 rgba(255, 122, 0 ,0.3);
+            box-shadow: 0 0 0 0 rgba(255, 215, 0, .3);
         }
     
         to{

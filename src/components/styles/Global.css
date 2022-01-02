@@ -54,14 +54,16 @@ nav .nav-links a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     opacity: 0;
   }
   nav .nav-links li {
     opacity: 0;
+  }
+  nav .nav-links li a {
+    color: #daa520;
+    font-weight: 600;
   }
   nav .side-active {
     -webkit-box-shadow: 0 0 5px #daa520;
@@ -606,6 +608,11 @@ nav .nav-links a:hover {
   border-radius: 50%;
 }
 
+.knowledge .icon img:hover {
+  -webkit-animation: pulse 1s ease-in;
+          animation: pulse 1s ease-in;
+}
+
 .knowledge .description {
   background-color: #141414;
   color: #FFFFFF;
@@ -634,11 +641,6 @@ nav .nav-links a:hover {
           animation: show 2s ease-in;
 }
 
-.knowledge .pulse {
-  -webkit-animation: pulse 1s ease-in;
-          animation: pulse 1s ease-in;
-}
-
 @-webkit-keyframes show {
   from {
     opacity: 0;
@@ -659,8 +661,8 @@ nav .nav-links a:hover {
 
 @-webkit-keyframes pulse {
   from {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
-            box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.3);
+            box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.3);
   }
   to {
     -webkit-box-shadow: 0 0 0 90px rgba(255, 122, 0, 0);
@@ -670,8 +672,8 @@ nav .nav-links a:hover {
 
 @keyframes pulse {
   from {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
-            box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.3);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.3);
+            box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.3);
   }
   to {
     -webkit-box-shadow: 0 0 0 90px rgba(255, 122, 0, 0);
@@ -742,6 +744,7 @@ nav .nav-links a:hover {
   color: #FFFFFF;
   font-size: 80px;
   line-height: 98px;
+  text-shadow: 0 0 5px #daa520;
 }
 
 @media screen and (max-width: 600px) {
@@ -821,6 +824,7 @@ nav .nav-links a:hover {
   text-shadow: 2px 2px 2px black;
   color: #daa520;
   margin-bottom: 200px;
+  text-shadow: 0 0 10px red;
 }
 
 .contact .icons label {
@@ -842,6 +846,5 @@ nav .nav-links a:hover {
   border-radius: 50%;
   width: 80%;
   height: 80%;
-  text-shadow: 0 0 5px #daa520;
 }
 /*# sourceMappingURL=Global.css.map */

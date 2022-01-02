@@ -10,6 +10,7 @@
         color: $white;
         font-size: 80px;
         line-height: 98px;
+        text-shadow: 0 0 5px $gold;
 
         @media screen and (max-width: 600px){
             font-size: 40px;
@@ -72,6 +73,8 @@
                     text-shadow: 2px 2px 2px black;
                     color: $gold;
                     margin-bottom: 200px;
+                    text-shadow: 0 0 10px red;
+                    
                 }
             }
 
@@ -89,7 +92,6 @@
             border-radius: 50%;
             width: 80%;
             height: 80%;
-            text-shadow: 0 0 5px $gold;
         }
 
     }

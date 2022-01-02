@@ -37,12 +37,17 @@ nav{
             border-radius: 5px;
             background-color: $black;
             align-items: center;
-            transform: translateX(100%);
+            // transform: translateX(100%); BUG OCORRE POR CONTA DA LIB AOS (Está em análise para resolução)
             transition: all .5s ease-in-out;
             opacity: 0;
 
             li{
                 opacity: 0;
+
+                a{
+                    color: $gold;
+                    font-weight: 600;
+                }
             }
         }
 

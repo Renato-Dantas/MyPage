@@ -25,10 +25,11 @@ function App() {
     <div className="App">
       <NavBar/>
       <Hello myPicture= {me} />
-      <About effect='fade-up' id='about'/>
+      <About effect='fade-down' id='about'/>
 
       {/* Projects Section */}
-      <Title titleText="Projects" effect='fade-left'/>
+
+      <Title titleText="Projects" effect='fade-down'/>
       <ProjSection projectTitle="Exemplo" 
       projectLink={'https://michalsnik.github.io/aos/'}
       effect={'fade-down'}/>
@@ -40,7 +41,8 @@ function App() {
       effect={'fade-down'}/>
 
       {/* Expirience Section */}
-      <Title titleText="Experience" effect='fade-left'/>
+
+      <Title titleText="Experience" effect='fade-down'/>
       <Experience
         year={2021}
         title={'Econverse'}
@@ -60,7 +62,8 @@ function App() {
       />
 
       {/* Courses */}
-      <Title titleText='Courses' effect='fade-left'/>
+     
+      <Title titleText='Courses' effect='fade-down'/>
       <Courses 
       title={"JavaScript"}
       year={2020}
@@ -77,7 +80,8 @@ function App() {
       description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia laborum fugiat earum in natus temporibus consectetur, magnam eum hic voluptas perferendis officia tenetur, provident sapiente necessitatibus quos. Veniam, voluptatum!'}/>
 
       {/* Technologies */}
-      <Title titleText='Knowleadges' effect='fade-left'/>
+     
+      <Title titleText='Knowleadges' effect='fade-down'/>
 
       <Knowledge title={'Shopify'}
       description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quia laborum fugiat earum in natus temporibus consectetur, magnam eum hic voluptas perferendis officia tenetur, provident sapiente necessitatibus quos. Veniam, voluptatum!'}
